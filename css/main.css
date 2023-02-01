@@ -1,0 +1,133 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.hero
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*===========
+    Nav-Bar
+  ===========*/
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo
+{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+#text-detail
+{
+    color: #f9004d;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+nav ul li a:hover
+{
+    color: #f9004d;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn 
+{
+    background: #f9004d;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out
+}
+
+.toggle
+{
+    display: none;
+}
+
+.btn a
+{
+
+    color: white;
+    text-decoration: none;
+}
+
+.btn i
+{
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover
+{
+    transform: scale(1.2);
+    background: #c10742;
+}
+
+
+@media screen and (min-width: px) 
+{
+    .toggle
+    {
+        background: #f9004d;
+        padding: 10px 25px;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        transition: all 0.3s ease-in-out
+    }
+
+    nav
+    {
+        display: none;
+    }
+}
+
+/*===========
+End of Nav-Bar
+  ===========*/
+
+
+
+
+
+
+
+
+
+
+
