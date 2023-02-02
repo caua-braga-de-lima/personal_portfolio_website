@@ -6,15 +6,24 @@
     box-sizing: border-box;
 }
 
+body
+{
+    background-image: url("../img/micro_carbon.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .hero
 {
     height: 100vh;
     width: 100%;
-    background-image: url("../img/background.jpg");
+    /* background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
+
 
 /*===========
     Nav-Bar
@@ -99,22 +108,46 @@ nav ul li a:hover
     background: #c10742;
 }
 
+.toggle
+{
+    display: none;
+}
 
-@media screen and (min-width: px) 
+
+@media screen and (max-width: 576px) 
 {
     .toggle
     {
+        display: flex;
         background: #f9004d;
-        padding: 10px 25px;
+        padding: 8px 20px;
         border: 2px solid transparent;
         border-radius: 30px;
-        transition: all 0.3s ease-in-out
     }
 
-    nav
+    .list-of-links
+    {
+        display: none;
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    .nav-link
+    {
+        border-top: 2px solid white;
+        padding: 5px;
+    }
+
+    .subscribe-btn
     {
         display: none;
     }
+
+    .show-links
+    {
+        height: 309.79px;
+    }
+
 }
 
 /*===========
@@ -122,6 +155,101 @@ End of Nav-Bar
   ===========*/
 
 
+  /*===========
+    Page
+  ===========*/
+
+  .newsletter-form
+  {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+  }
+
+  h1
+  {
+    color: white;
+    font-size: 75px;
+    margin: 20px 0 20px;
+  }
+
+  h3
+  {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  h4
+  {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px ;
+  }
+
+  .newsletter-form
+  {
+    display: grid;
+  }
+
+  .newsletter-form form
+  {
+    max-width: 100%;
+    width: 380px;
+    position: relative;
+  }
+
+  .newsletter-form form input:first-child
+  {
+    display: inline-block;
+    border: 2px solid #f9004d;
+    border-radius: 30px;
+    padding: 14px 130px 14px 15px;
+    width: 100%;
+    outline: none;  
+  }
+
+  .newsletter-form form button
+  {
+    position: absolute;
+    display: inline-block;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color:#f9004d;
+    box-shadow: 0px 0px 5px black, 0px 0px 15px #858585;
+    top: 6px;
+    right: 8px;
+  }
+
+  #name-detail
+  {
+    color: #f9004d;
+  }
+
+  .profile-pic
+  {
+    display: flex;
+  } 
+
+  .profile-pic img
+  {
+    transform: scale(0.7);
+    border-radius: 30px;
+    position: relative;
+  }
+
+  .main-hero
+  {
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  
 
 
 
